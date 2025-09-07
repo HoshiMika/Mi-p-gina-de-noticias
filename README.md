@@ -1,2 +1,2 @@
 # Mi página de noticias
-Tarea de lengiajes de programacion 2
+Tarea de lenguajes de programacion 2
