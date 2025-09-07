@@ -1,0 +1,272 @@
+/* Variables de colores */
+:root {
+    --primary-color: #FCD116;    /* Amarillo (color primario) */
+    --secondary-color: #003893;  /* Azul oscuro (color secundario) */
+    --accent-color: #CE1126;     /* Rojo (color de acento) */
+    --light-color: #f8f9fa;      /* Gris muy claro (color claro) */
+    --dark-color: #343a40;       /* Gris oscuro (color oscuro) */
+    --text-color: #333;          /* Color de texto principal */
+    --border-radius: 8px;        /* Radio de borde estándar */
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra estándar */
+}
+/* Estilos generales */
+* {
+    margin: 0;           /* Elimina márgenes por defecto de todos los elementos */
+    padding: 0;          /* Elimina rellenos por defecto de todos los elementos */
+    box-sizing: border-box; /* Hace que el padding y border se incluyan en el ancho/alto total */
+}
+body {
+    font-family: 'Open Sans', sans-serif; /* Fuente principal del cuerpo */
+    color: var(--text-color);             /* Color de texto usando variable */
+    background-color: #f5f5f5;            /* Color de fondo gris claro */
+    line-height: 1.6;                     /* Espaciado entre líneas */
+    display: flex;                        /* Usa flexbox para layout */
+    flex-direction: column;               /* Organiza los elementos en columna */
+    min-height: 100vh;                    /* Altura mínima de toda la ventana */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Fuente diferente para los títulos */
+    margin-bottom: 1rem;                  /* Espacio inferior para títulos */
+    color: var(--secondary-color);        /* Color de títulos usando variable */
+}
+a {
+    text-decoration: none;                /* Elimina subrayado de enlaces */
+    color: var(--secondary-color);        /* Color de enlaces usando variable */
+    transition: color 0.3s;               /* Transición suave para cambio de color */
+}
+a:hover {
+    color: var(--accent-color);           /* Color al pasar el mouse sobre enlaces */
+}
+img {
+    max-width: 100%;      /* Imágenes responsivas que no exceden su contenedor */
+    height: auto;         /* Mantiene la proporción de la imagen */
+    display: block;       /* Elimina espacio inferior que tienen las imágenes por defecto */
+}
+.container {
+    width: 90%;               /* Ancho del 90% del contenedor padre */
+    max-width: 1200px;        /* Ancho máximo fijo */
+    margin: 0 auto;           /* Centra el contenedor horizontalmente */
+    padding: 0 15px;          /* Relleno interno a los lados */
+}
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    color: white;             /* Texto blanco */
+    padding: 1.5rem 0;        /* Relleno superior e inferior */
+    text-align: center;       /* Centra el texto */
+    width: 100%;              /* Ancho completo */
+    box-shadow: var(--box-shadow); /* Sombra usando variable */
+}
+header h1 {
+    color: white;             /* Fuerza color blanco para h1 en header */
+    font-size: 2.5rem;        /* Tamaño de fuente grande */
+    margin-bottom: 0.5rem;    /* Espacio inferior reducido */
+}
+/* Navegación */
+nav {
+    background-color: var(--light-color); /* Fondo claro usando variable */
+    padding: 1rem 0;          /* Relleno superior e inferior */
+    width: 100%;              /* Ancho completo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+nav ul {
+    display: flex;            /* Usa flexbox para el menú */
+    justify-content: center;  /* Centra los elementos del menú */
+    list-style: none;         /* Elimina viñetas de la lista */
+}
+nav ul li {
+    margin: 0 1.5rem;         /* Espacio entre elementos del menú */
+}
+nav ul li a {
+    font-weight: 600;         /* Texto en negrita */
+    font-size: 1.1rem;        /* Tamaño de fuente */
+    padding: 0.5rem 1rem;     /* Relleno interno */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para fondo */
+}
+nav ul li a:hover {
+    background-color: rgba(0, 56, 147, 0.1); /* Fondo semitransparente al pasar mouse */
+}
+/* Main content */
+main {
+    padding: 2rem 0;         /* Relleno superior e inferior */
+    flex: 1;                 /* Ocupa todo el espacio disponible (para sticky footer) */
+}
+.intro {
+    background-color: white;  /* Fondo blanco */
+    padding: 2rem;            /* Relleno interno */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+    margin-bottom: 2rem;      /* Espacio inferior */
+    box-shadow: var(--box-shadow); /* Sombra usando variable */
+    text-align: center;       /* Texto centrado */
+}
+.intro p {
+    font-size: 1.1rem;        /* Tamaño de fuente ligeramente mayor */
+    max-width: 800px;         /* Ancho máximo para mejor legibilidad */
+    margin: 0 auto;           /* Centra el párrafo */
+}
+/* Información de contacto */
+.contact-info {
+    background-color: white;  /* Fondo blanco */
+    padding: 2rem;            /* Relleno interno */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+    margin-bottom: 2rem;      /* Espacio inferior */
+    box-shadow: var(--box-shadow); /* Sombra usando variable */
+}
+.contact-card {
+    display: flex;                   /* Usa flexbox */
+    flex-direction: column;          /* Organiza elementos en columna */
+    align-items: center;             /* Centra horizontalmente */
+    text-align: center;              /* Texto centrado */
+    padding: 2rem;                   /* Relleno interno */
+    border: 1px solid #eee;          /* Borde sutil */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+.contact-card:hover {
+    transform: translateY(-5px);     /* Efecto de levitación al pasar mouse */
+    box-shadow: var(--box-shadow);   /* Sombra al pasar mouse */
+}
+.profile-img {
+    width: 150px;           /* Ancho fijo */
+    height: 150px;          /* Alto fijo (mismo que ancho para formar círculo) */
+    border-radius: 50%;     /* Hace el elemento circular */
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    display: flex;          /* Flexbox para centrar contenido */
+    align-items: center;    /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    margin-bottom: 1.5rem;  /* Espacio inferior */
+    color: white;           /* Texto blanco */
+    font-size: 3rem;        /* Tamaño de fuente grande */
+    font-weight: bold;      /* Texto en negrita */
+}
+.contact-details {
+    margin: 1rem 0;         /* Margen superior e inferior */
+}
+.contact-item {
+    display: flex;          /* Usa flexbox para alinear icono y texto */
+    align-items: center;    /* Centra verticalmente */
+    margin: 1rem 0;         /* Margen superior e inferior */
+    padding: 0.5rem;        /* Relleno interno */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para fondo */
+}
+.contact-item:hover {
+    background-color: rgba(0, 56, 147, 0.05); /* Fondo semitransparente al pasar mouse */
+}
+.contact-icon {
+    width: 40px;            /* Ancho fijo */
+    height: 40px;           /* Alto fijo (igual que ancho para círculo) */
+    background-color: var(--secondary-color); /* Fondo azul */
+    color: white;           /* Icono blanco */
+    border-radius: 50%;     /* Forma circular */
+    display: flex;          /* Flexbox para centrar */
+    align-items: center;    /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    margin-right: 1rem;     /* Espacio a la derecha */
+    font-size: 1.2rem;      /* Tamaño de fuente */
+}
+/* Formulario de contacto */
+.contact-form {
+    background-color: white;  /* Fondo blanco */
+    padding: 2rem;            /* Relleno interno */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+    box-shadow: var(--box-shadow); /* Sombra usando variable */
+    margin-bottom: 2rem;      /* Espacio inferior */
+}
+.form-group {
+    margin-bottom: 1.5rem;    /* Espacio entre grupos de formulario */
+}
+.form-group label {
+    display: block;           /* Hace que la etiqueta ocupe toda la línea */
+    margin-bottom: 0.5rem;    /* Espacio inferior */
+    font-weight: 600;         /* Texto en negrita */
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;              /* Ancho completo */
+    padding: 0.8rem;          /* Relleno interno */
+    border: 1px solid #ddd;   /* Borde sutil */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+    font-family: 'Open Sans', sans-serif; /* Fuente consistente */
+}
+.form-group textarea {
+    min-height: 150px;        /* Altura mínima */
+    resize: vertical;         /* Permite redimensionar solo verticalmente */
+}
+.btn {
+    background-color: var(--secondary-color); /* Fondo azul */
+    color: white;             /* Texto blanco */
+    border: none;             /* Sin borde */
+    padding: 0.8rem 1.5rem;   /* Relleno interno */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+    cursor: pointer;          /* Cursor de mano al pasar por encima */
+    font-family: 'Montserrat', sans-serif; /* Fuente diferente */
+    font-weight: 600;         /* Texto en negrita */
+    transition: background-color 0.3s; /* Transición suave para color de fondo */
+}
+.btn:hover {
+    background-color: var(--accent-color); /* Fondo rojo al pasar mouse */
+}
+/* Footer */
+footer {
+    background-color: var(--dark-color); /* Fondo oscuro */
+    color: white;             /* Texto blanco */
+    padding: 2rem 0;          /* Relleno superior e inferior */
+    width: 100%;              /* Ancho completo */
+    margin-top: auto;         /* Empuja el footer hacia abajo (para sticky footer) */
+}
+.footer-content {
+    display: flex;                   /* Usa flexbox */
+    justify-content: space-between;  /* Espacio entre elementos */
+    align-items: center;             /* Centra verticalmente */
+    flex-wrap: wrap;                 /* Permite que se envuelvan en pantallas pequeñas */
+}
+.copyright {
+    margin-bottom: 1rem;    /* Espacio inferior (útil cuando se envuelve) */
+}
+.social-links {
+    display: flex;          /* Usa flexbox para iconos sociales */
+    gap: 1rem;              /* Espacio entre iconos */
+}
+.social-links a {
+    color: white;           /* Iconos blancos */
+    font-size: 1.5rem;      /* Tamaño de fuente grande */
+}
+.social-links a:hover {
+    color: var(--primary-color); /* Iconos amarillos al pasar mouse */
+}
+    /* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;    /* Cambia menú a columna en móviles */
+        align-items: center;       /* Centra elementos del menú */
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;         /* Espacio entre elementos del menú */
+    }
+    
+    .footer-content {
+        flex-direction: column;    /* Cambia footer a columna en móviles */
+        text-align: center;        /* Texto centrado */
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr; /* Una columna en grid (aunque no se define arriba) */
+    }
+}
+/* Estilos específicos para contacto */
+.academic-info {
+    background: linear-gradient(to right, rgba(252, 209, 22, 0.1), rgba(0, 56, 147, 0.1));
+    border-left: 4px solid var(--primary-color); /* Borde izquierdo amarillo */
+    padding: 1.5rem;           /* Relleno interno */
+    margin: 2rem 0;            /* Margen superior e inferior */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+}
+.info-grid {
+    display: grid;                                   /* Usa CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas responsivas */
+    gap: 2rem;                                       /* Espacio entre elementos */
+    margin: 2rem 0;                                  /* Margen superior e inferior */
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- Declara que este es un documento HTML5 -->
+<html lang="es">
+<!-- Apertura del elemento raíz HTML, especifica que el idioma principal es español -->
+
+<head>
+    <!-- Sección de metadatos e información para el navegador -->
+    <meta charset="UTF-8">
+    <!-- Especifica la codificación de caracteres como UTF-8 (incluye caracteres en español) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la visualización en dispositivos móviles (viewport responsive) -->
+    <title>Noticias Políticas - Colombia</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="/CSS/stylepolitica.css" />
+    <!-- Enlace al archivo CSS externo para los estilos de la página -->
+</head>
+
+<body>
+    <!-- Comienza el contenido visible de la página web -->
+    <header>
+        <!-- Encabezado de la página (no confundir con head) -->
+        <div class="container">
+            <!-- Contenedor para agrupar elementos y aplicar estilos -->
+            <h1>Política Colombiana</h1>
+            <!-- Título principal de la página -->
+            <p>Información actualizada sobre el panorama político del país</p>
+            <!-- Subtítulo o descripción bajo el título principal -->
+        </div>
+    </header>
+
+    <nav>
+        <!-- Sección de navegación con menús -->
+        <div class="container">
+            <!-- Contenedor para agrupar elementos -->
+            <ul>
+                <!-- Lista no ordenada para los elementos del menú -->
+                <li><a href="#" onclick="window.close(); return false;">Volver a Noticias</a></li>
+                <!-- Elemento de menú con enlace que cierra la ventana al hacer clic -->
+                <li><a href="#">Gobierno</a></li>
+                <!-- Elemento de menú (enlace vacío) -->
+                <li><a href="#">Elecciones</a></li>
+                <!-- Elemento de menú (enlace vacío) -->
+                <li><a href="#">Congreso</a></li>
+                <!-- Elemento de menú (enlace vacío) -->
+                <li><a href="#">Partidos</a></li>
+                <!-- Elemento de menú (enlace vacío) -->
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Contenido principal de la página -->
+        <section class="intro">
+            <!-- Sección introductoria -->
+            <h2>Últimas noticias políticas de Colombia</h2>
+            <!-- Título de sección -->
+            <p>Información veraz y oportuna sobre el acontecer político nacional, decisiones del gobierno, debates en el
+                congreso y análisis de las principales problemáticas del país.</p>
+            <!-- Párrafo descriptivo de la sección -->
+        </section>
+
+        <div class="election-countdown">
+            <!-- Contenedor para la cuenta regresiva de elecciones -->
+            <h3>Próximas Elecciones Regionales</h3>
+            <!-- Título de tercer nivel -->
+            <p>Faltan <span class="countdown-number">42</span> días para las elecciones de gobernadores y alcaldes</p>
+            <!-- Párrafo con número destacado usando span -->
+        </div>
+
+        <section>
+            <!-- Otra sección de contenido -->
+            <h2>Noticias Políticas Relevantes</h2>
+            <!-- Título de sección -->
+            <table class="news-table">
+                <!-- Tabla para mostrar noticias en formato tabular -->
+                <thead>
+                    <!-- Encabezado de la tabla -->
+                    <tr>
+                        <!-- Fila de encabezado -->
+                        <th>Título de la noticia</th>
+                        <!-- Celda de encabezado de columna -->
+                        <th>Fecha</th>
+                        <!-- Celda de encabezado de columna -->
+                        <th>Fuente</th>
+                        <!-- Celda de encabezado de columna -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cuerpo de la tabla -->
+                    <tr>
+                        <!-- Fila de datos -->
+                        <td><a href="#">Gobierno anuncia reforma política para fortalecer democracia</a></td>
+                        <!-- Celda con enlace a noticia -->
+                        <td>06/09/2025</td>
+                        <!-- Celda con fecha -->
+                        <td>El Espectador</td>
+                        <!-- Celda con fuente -->
+                    </tr>
+                    <tr>
+                        <!-- Otra fila de datos -->
+                        <td><a href="#">Debate en el Congreso por presupuesto para educación</a></td>
+                        <!-- Celda con enlace a noticia -->
+                        <td>05/09/2025</td>
+                        <!-- Celda con fecha -->
+                        <td>El Tiempo</td>
+                        <!-- Celda con fuente -->
+                    </tr>
+                    <tr>
+                        <!-- Otra fila de datos -->
+                        <td><a href="#">Nuevos partidos políticos obtienen personería jurídica</a></td>
+                        <!-- Celda con enlace a noticia -->
+                        <td>04/09/2025</td>
+                        <!-- Celda con fecha -->
+                        <td>La República</td>
+                        <!-- Celda con fuente -->
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="political-highlight">
+            <!-- Contenedor para destacado político -->
+            <h3>Análisis Político</h3>
+            <!-- Título de tercer nivel -->
+            <p>Según analistas, las próximas elecciones regionales podrían significar un cambio en el mapa político del
+                país, con un posible fortalecimiento de coaliciones independientes en varias regiones.</p>
+            <!-- Párrafo con análisis -->
+        </div>
+
+        <section>
+            <!-- Otra sección de contenido -->
+            <h2>Noticias Destacadas de Política</h2>
+            <!-- Título de sección -->
+            <div class="news-cards">
+                <!-- Contenedor para tarjetas de noticias -->
+                <div class="card">
+                    <!-- Tarjeta individual -->
+                    <div class="card-img">
+                        <!-- Contenedor para imagen de la tarjeta -->
+                        <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Congreso de Colombia">
+                        <!-- Imagen con URL externa y texto alternativo -->
+                    </div>
+                    <div class="card-content">
+                        <!-- Contenedor para contenido de la tarjeta -->
+                        <h3>Nuevas leyes aprobadas en el Congreso</h3>
+                        <!-- Título de la noticia -->
+                        <p>El legislativo aprobó cinco nuevas leyes que impactarán la economía y la sociedad colombiana,
+                            incluyendo reformas al sistema de salud y estímulos para pymes.</p>
+                        <!-- Descripción de la noticia -->
+                        <span class="date">Publicado: 06/09/2025</span>
+                        <!-- Fecha de publicación -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <!-- Otra tarjeta individual -->
+                    <div class="card-img">
+                        <!-- Contenedor para imagen de la tarjeta -->
+                        <img src="https://images.unsplash.com/photo-1551524160-0ee7d8d6d6ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Protestas sociales">
+                        <!-- Imagen con URL externa y texto alternativo -->
+                    </div>
+                    <div class="card-content">
+                        <!-- Contenedor para contenido de la tarjeta -->
+                        <h3>Movimientos sociales anuncian manifestaciones pacíficas</h3>
+                        <!-- Título de la noticia -->
+                        <p>Organizaciones sociales convocaron a marchas en las principales ciudades para exigir mayores
+                            recursos para programas de vivienda y educación superior.</p>
+                        <!-- Descripción de la noticia -->
+                        <span class="date">Publicado: 05/09/2025</span>
+                        <!-- Fecha de publicación -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <!-- Otra tarjeta individual -->
+                    <div class="card-img">
+                        <!-- Contenedor para imagen de la tarjeta -->
+                        <img src="https://images.unsplash.com/photo-1613360416296-5c65d2601bee?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Relaciones internacionales">
+                        <!-- Imagen con URL externa y texto alternativo -->
+                    </div>
+                    <div class="card-content">
+                        <!-- Contenedor para contenido de la tarjeta -->
+                        <h3>Colombia fortalece relaciones con países de la Unión Europea</h3>
+                        <!-- Título de la noticia -->
+                        <p>El canciller anunció nuevos acuerdos comerciales y de cooperación con varios países europeos,
+                            enfocados en transferencia tecnológica y desarrollo sostenible.</p>
+                        <!-- Descripción de la noticia -->
+                        <span class="date">Publicado: 04/09/2025</span>
+                        <!-- Fecha de publicación -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="political-highlight">
+            <!-- Sección de destacado político -->
+            <h3>Encuesta de Opinión</h3>
+            <!-- Título de tercer nivel -->
+            <p>La última encuesta del Centro de Estudios Políticos muestra que la aprobación presidencial se mantiene en
+                52%, mientras que la valoración positiva del Congreso subió 5 puntos respecto al mes anterior.</p>
+            <!-- Párrafo con resultados de encuesta -->
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+        <div class="container">
+            <!-- Contenedor para agrupar elementos -->
+            <div class="footer-content">
+                <!-- Contenedor para contenido del footer -->
+                <div class="copyright">
+                    <!-- Contenedor para información de copyright -->
+                    <p>&copy; 2025 Noticias Colombia - Política. Todos los derechos reservados.</p>
+                    <!-- Texto de copyright -->
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- Fin del contenido visible de la página -->
+
+</html>
+<!-- Fin del documento HTML -->

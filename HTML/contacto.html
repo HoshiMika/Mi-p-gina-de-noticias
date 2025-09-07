@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!-- Declara que este es un documento HTML5 -->
+<html lang="es">
+<!-- Apertura del elemento raíz HTML, especifica que el idioma principal es español -->
+
+<head>
+    <!-- Sección de metadatos e información para el navegador -->
+    <meta charset="UTF-8">
+    <!-- Especifica la codificación de caracteres como UTF-8 (incluye caracteres en español) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la visualización en dispositivos móviles (viewport responsive) -->
+    <title>Contacto - Juan David Bayona</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="/CSS/stylecontacto.css"/>
+    <!-- Enlace al archivo CSS externo para los estilos de la página -->
+</head>
+
+<body>
+    <!-- Comienza el contenido visible de la página web -->
+    <header>
+        <!-- Encabezado de la página -->
+        <div class="container">
+            <!-- Contenedor para agrupar elementos y aplicar estilos -->
+            <h1>Contacto</h1>
+            <!-- Título principal de la página -->
+            <p>Información de contacto y datos académicos</p>
+            <!-- Subtítulo o descripción bajo el título principal -->
+        </div>
+    </header>
+    
+    <nav>
+        <!-- Sección de navegación con menús -->
+        <div class="container">
+            <!-- Contenedor para agrupar elementos -->
+            <ul>
+                <!-- Lista no ordenada para los elementos del menú -->
+                <li><a href="#" onclick="window.close(); return false;">Volver a Noticias</a></li>
+                <!-- Elemento de menú con enlace que cierra la ventana al hacer clic -->
+                <li><a href="#datos">Datos Personales</a></li>
+                <!-- Elemento de menú con enlace interno a la sección "datos" -->
+                <li><a href="#academico">Información Académica</a></li>
+                <!-- Elemento de menú con enlace interno a la sección "academico" -->
+                <li><a href="#formulario">Formulario de Contacto</a></li>
+                <!-- Elemento de menú con enlace interno a la sección "formulario" -->
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="container">
+        <!-- Contenido principal de la página -->
+        <section class="intro">
+            <!-- Sección introductoria -->
+            <h2>Información de Contacto</h2>
+            <!-- Título de sección -->
+            <p>En esta página encontrarás mis datos personales, información académica y un formulario para contactarme directamente.</p>
+            <!-- Párrafo descriptivo de la sección -->
+        </section>
+        
+        <section id="datos" class="contact-info">
+            <!-- Sección de datos personales con ID para navegación interna -->
+            <h2>Datos Personales</h2>
+            <!-- Título de sección -->
+            <div class="contact-card">
+                <!-- Tarjeta contenedora de información de contacto -->
+                <div class="profile-img">JD</div>
+                <!-- Div para mostrar iniciales o imagen de perfil (aquí muestra "JD") -->
+                <h3>Juan David Bayona Castañeda</h3>
+                <!-- Nombre completo de la persona -->
+                
+                <div class="contact-details">
+                    <!-- Contenedor para los detalles de contacto -->
+                    <div class="contact-item">
+                        <!-- Elemento individual de contacto -->
+                        <div class="contact-icon">📱</div>
+                        <!-- Icono de teléfono (emoji) -->
+                        <div>
+                            <strong>Celular:</strong> 3204073004
+                            <!-- Texto con número de teléfono -->
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <!-- Elemento individual de contacto -->
+                        <div class="contact-icon">📧</div>
+                        <!-- Icono de email (emoji) -->
+                        <div>
+                            <strong>Correo electrónico:</strong> jdbayona@ucompensar.edu.co
+                            <!-- Texto con dirección de email -->
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <!-- Elemento individual de contacto -->
+                        <div class="contact-icon">🏠</div>
+                        <!-- Icono de ubicación (emoji) -->
+                        <div>
+                            <strong>Ubicación:</strong> Bogotá, Colombia
+                            <!-- Texto con ubicación -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="academico" class="academic-info">
+            <!-- Sección de información académica con ID para navegación interna -->
+            <h2>Información Académica</h2>
+            <!-- Título de sección -->
+            <div class="info-grid">
+                <!-- Contenedor con diseño de grid para información académica -->
+                <div class="contact-card">
+                    <!-- Tarjeta contenedora de información -->
+                    <h3>Programa Académico</h3>
+                    <!-- Subtítulo de la tarjeta -->
+                    <div class="contact-item">
+                        <!-- Elemento individual de información -->
+                        <div class="contact-icon">🎓</div>
+                        <!-- Icono de graduación (emoji) -->
+                        <div>
+                            <strong>Ingeniería de Software</strong>
+                            <!-- Nombre del programa académico -->
+                            <p>Fundación Universitaria Compensar</p>
+                            <!-- Institución educativa -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <!-- Otra tarjeta contenedora de información -->
+                    <h3>Clase Actual</h3>
+                    <!-- Subtítulo de la tarjeta -->
+                    <div class="contact-item">
+                        <!-- Elemento individual de información -->
+                        <div class="contact-icon">📚</div>
+                        <!-- Icono de libros (emoji) -->
+                        <div>
+                            <strong>INTRODUCCION A LOS LENGUAJES DE INTERNET</strong>
+                            <!-- Nombre de la clase/materia -->
+                            <p>Desarrollo de aplicaciones web</p>
+                            <!-- Descripción de la clase -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="formulario" class="contact-form">
+            <!-- Sección de formulario de contacto con ID para navegación interna -->
+            <h2>Formulario de Contacto</h2>
+            <!-- Título de sección -->
+            <p>Si deseas contactarme, completa el siguiente formulario y me pondré en contacto contigo a la brevedad.</p>
+            <!-- Instrucciones para el usuario -->
+            
+            <form>
+                <!-- Formulario para recopilar datos del usuario -->
+                <div class="form-group">
+                    <!-- Grupo de elementos del formulario -->
+                    <label for="name">Nombre completo</label>
+                    <!-- Etiqueta para el campo de nombre -->
+                    <input type="text" id="name" placeholder="Ingresa tu nombre completo" required>
+                    <!-- Campo de entrada de texto para el nombre (obligatorio) -->
+                </div>
+                
+                <div class="form-group">
+                    <!-- Grupo de elementos del formulario -->
+                    <label for="email">Correo electrónico</label>
+                    <!-- Etiqueta para el campo de email -->
+                    <input type="email" id="email" placeholder="Ingresa tu correo electrónico" required>
+                    <!-- Campo de entrada de email (obligatorio, validación de formato) -->
+                </div>
+                
+                <div class="form-group">
+                    <!-- Grupo de elementos del formulario -->
+                    <label for="subject">Asunto</label>
+                    <!-- Etiqueta para el campo de asunto -->
+                    <input type="text" id="subject" placeholder="Asunto del mensaje" required>
+                    <!-- Campo de entrada de texto para el asunto (obligatorio) -->
+                </div>
+                
+                <div class="form-group">
+                    <!-- Grupo de elementos del formulario -->
+                    <label for="message">Mensaje</label>
+                    <!-- Etiqueta para el campo de mensaje -->
+                    <textarea id="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    <!-- Campo de área de texto para el mensaje (obligatorio) -->
+                </div>
+                
+                <button type="submit" class="btn">Enviar mensaje</button>
+                <!-- Botón para enviar el formulario -->
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Pie de página -->
+        <div class="container">
+            <!-- Contenedor para agrupar elementos -->
+            <div class="footer-content">
+                <!-- Contenedor para contenido del footer -->
+                <div class="copyright">
+                    <!-- Contenedor para información de copyright -->
+                    <p>&copy; 2025 Juan David Bayona Castañeda. Todos los derechos reservados.</p>
+                    <!-- Texto de copyright personalizado -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script para el formulario
+        // Agrega un event listener para el evento 'submit' del formulario
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Previene el envío tradicional del formulario
+            
+            // Aquí normalmente se enviaría el formulario a un servidor
+            // Por ahora solo mostraremos una alerta
+            alert('¡Gracias por tu mensaje! Te contactaré pronto.');
+            this.reset(); // Limpia todos los campos del formulario
+        });
+    </script>
+</body>
+<!-- Fin del contenido visible de la página -->
+
+</html>
+<!-- Fin del documento HTML -->

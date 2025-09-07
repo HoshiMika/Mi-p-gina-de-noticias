@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!-- Declara que este es un documento HTML5 -->
+<html lang="es">
+<!-- Apertura del elemento raíz HTML, especifica que el idioma principal es español -->
+
+<head>
+    <!-- Sección de metadatos e información para el navegador -->
+    <meta charset="UTF-8">
+    <!-- Especifica la codificación de caracteres como UTF-8 (incluye caracteres en español) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la visualización en dispositivos móviles (viewport responsive) -->
+    <title>Deportes Colombia - Noticias Deportivas</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="/CSS/styledeportes.css" />
+    <!-- Enlace al archivo CSS externo para los estilos de la página -->
+</head>
+
+<body>
+    <!-- Comienza el contenido visible de la página web -->
+    <header>
+        <!-- Encabezado de la página -->
+        <div class="container">
+            <!-- Contenedor para agrupar elementos y aplicar estilos -->
+            <h1>Deportes Colombia</h1>
+            <!-- Título principal de la página -->
+            <p>Todo sobre el deporte colombiano e internacional</p>
+            <!-- Subtítulo o descripción bajo el título principal -->
+        </div>
+    </header>
+    
+    <nav>
+        <!-- Sección de navegación con menús -->
+        <div class="container">
+            <!-- Contenedor para agrupar elementos -->
+            <ul>
+                <!-- Lista no ordenada para los elementos del menú -->
+                <li><a href="#" onclick="window.close(); return false;">Volver a Noticias</a></li>
+                <!-- Elemento de menú con enlace que cierra la ventana al hacer clic -->
+                <li><a href="#">Fútbol</a></li>
+                <!-- Elemento de menú (enlace vacío) -->
+                <li><a href="#">Ciclismo</a></li>
+                <!-- Elemento de menú (enlace vacío) -->
+                <li><a href="#">Boxeo</a></li>
+                <!-- Elemento de menú (enlace vacío) -->
+                <li><a href="#">Más Deportes</a></li>
+                <!-- Elemento de menú (enlace vacío) -->
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="container">
+        <!-- Contenido principal de la página -->
+        <section class="intro">
+            <!-- Sección introductoria -->
+            <h2>Últimas noticias deportivas de Colombia</h2>
+            <!-- Título de sección -->
+            <p>Información actualizada sobre fútbol, ciclismo, boxeo y todos los deportes donde Colombia se destaca a nivel nacional e internacional.</p>
+            <!-- Párrafo descriptivo de la sección -->
+        </section>
+        
+        <div class="match-schedule">
+            <!-- Contenedor para información del próximo partido -->
+            <h3>Próximo Partido de la Selección Colombia</h3>
+            <!-- Título de tercer nivel -->
+            <p>Colombia vs Brasil - Eliminatorias Mundial 2026</p>
+            <!-- Información del partido -->
+            <p>12 de septiembre de 2025 - 18:00 HS</p>
+            <!-- Fecha y hora del partido -->
+            <p>Estadio Metropolitano, Barranquilla</p>
+            <!-- Lugar del partido -->
+        </div>
+        
+        <section>
+            <!-- Otra sección de contenido -->
+            <h2>Noticias Deportivas Relevantes</h2>
+            <!-- Título de sección -->
+            <table class="news-table">
+                <!-- Tabla para mostrar noticias en formato tabular -->
+                <thead>
+                    <!-- Encabezado de la tabla -->
+                    <tr>
+                        <!-- Fila de encabezado -->
+                        <th>Título de la noticia</th>
+                        <!-- Celda de encabezado de columna -->
+                        <th>Fecha</th>
+                        <!-- Celda de encabezado de columna -->
+                        <th>Deporte</th>
+                        <!-- Celda de encabezado de columna -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cuerpo de la tabla -->
+                    <tr>
+                        <!-- Fila de datos -->
+                        <td><a href="#">Selección Colombia vence a Argentina en amistoso internacional</a></td>
+                        <!-- Celda con enlace a noticia -->
+                        <td>07/09/2025</td>
+                        <!-- Celda con fecha -->
+                        <td><span class="sport-category">Fútbol</span></td>
+                        <!-- Celda con categoría de deporte (con span para estilos) -->
+                    </tr>
+                    <tr>
+                        <!-- Otra fila de datos -->
+                        <td><a href="#">Egan Bernal gana etapa en Vuelta a España</a></td>
+                        <!-- Celda con enlace a noticia -->
+                        <td>06/09/2025</td>
+                        <!-- Celda con fecha -->
+                        <td><span class="sport-category">Ciclismo</span></td>
+                        <!-- Celda con categoría de deporte (con span para estilos) -->
+                    </tr>
+                    <tr>
+                        <!-- Otra fila de datos -->
+                        <td><a href="#">Colombia clasifica a cuartos de final en Copa América Femenina</a></td>
+                        <!-- Celda con enlace a noticia -->
+                        <td>05/09/2025</td>
+                        <!-- Celda con fecha -->
+                        <td><span class="sport-category">Fútbol Femenino</span></td>
+                        <!-- Celda con categoría de deporte (con span para estilos) -->
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <div class="sports-highlight">
+            <!-- Contenedor para resultados destacados -->
+            <h3>Resultados Destacados</h3>
+            <!-- Título de tercer nivel -->
+            <div style="text-align: center; margin: 1.5rem 0;">
+                <!-- Div con estilos en línea para centrar contenido -->
+                <span class="team-logo">COL</span>
+                <!-- Abreviatura/logo de equipo colombiano -->
+                <span class="score">2 - 1</span>
+                <!-- Marcador del partido -->
+                <span class="team-logo">ARG</span>
+                <!-- Abreviatura/logo de equipo argentino -->
+                <p>Amistoso Internacional - 6 de septiembre de 2025</p>
+                <!-- Información adicional sobre el partido -->
+            </div>
+        </div>
+        
+        <section>
+            <!-- Otra sección de contenido -->
+            <h2>Noticias Destacadas de Deportes</h2>
+            <!-- Título de sección -->
+            <div class="news-cards">
+                <!-- Contenedor para tarjetas de noticias -->
+                <div class="card">
+                    <!-- Tarjeta individual -->
+                    <div class="card-img">
+                        <!-- Contenedor para imagen de la tarjeta -->
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Fútbol colombiano">
+                        <!-- Imagen con URL externa y texto alternativo -->
+                    </div>
+                    <div class="card-content">
+                        <!-- Contenedor para contenido de la tarjeta -->
+                        <h3>Nuevos talentos en la Selección Colombia</h3>
+                        <!-- Título de la noticia -->
+                        <p>El director técnico de la selección colombiana presentó la convocatoria para los próximos partidos eliminatorios, con 5 caras nuevas que destacaron en la liga local.</p>
+                        <!-- Descripción de la noticia -->
+                        <span class="date">Publicado: 07/09/2025</span>
+                        <!-- Fecha de publicación -->
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <!-- Otra tarjeta individual -->
+                    <div class="card-img">
+                        <!-- Contenedor para imagen de la tarjeta -->
+                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Ciclismo colombiano">
+                        <!-- Imagen con URL externa y texto alternativo -->
+                    </div>
+                    <div class="card-content">
+                        <!-- Contenedor para contenido de la tarjeta -->
+                        <h3>Colombia domina en la Vuelta a España</h3>
+                        <!-- Título de la noticia -->
+                        <p>Los ciclistas colombianos Egan Bernal y Nairo Quintana se ubican dentro del top 5 de la general después de 10 etapas de competencia.</p>
+                        <!-- Descripción de la noticia -->
+                        <span class="date">Publicado: 06/09/2025</span>
+                        <!-- Fecha de publicación -->
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <!-- Otra tarjeta individual -->
+                    <div class="card-img">
+                        <!-- Contenedor para imagen de la tarjeta -->
+                        <img src="https://images.unsplash.com/photo-1549060279-7e168fce7090?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Boxeo colombiano">
+                        <!-- Imagen con URL externa y texto alternativo -->
+                    </div>
+                    <div class="card-content">
+                        <!-- Contenedor para contenido de la tarjeta -->
+                        <h3>Boxeador colombiano retendrá su título mundial</h3>
+                        <!-- Título de la noticia -->
+                        <p>El campeón mundial de peso welter se prepara para su próxima defensa del título en Cartagena, ante un rival mexicano invicto.</p>
+                        <!-- Descripción de la noticia -->
+                        <span class="date">Publicado: 05/09/2025</span>
+                        <!-- Fecha de publicación -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="sports-highlight">
+            <!-- Sección de eventos deportivos destacados -->
+            <h3>Próximos Eventos Deportivos</h3>
+            <!-- Título de tercer nivel -->
+            <p>Maratón de Bogotá - 15 de septiembre de 2025</p>
+            <!-- Información de evento -->
+            <p>Torneo de Golf Abierto de Colombia - 20-23 de septiembre de 2025</p>
+            <!-- Información de evento -->
+            <p>Campeonato Nacional de Patinaje - 25-28 de septiembre de 2025</p>
+            <!-- Información de evento -->
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Pie de página -->
+        <div class="container">
+            <!-- Contenedor para agrupar elementos -->
+            <div class="footer-content">
+                <!-- Contenedor para contenido del footer -->
+                <div class="copyright">
+                    <!-- Contenedor para información de copyright -->
+                    <p>&copy; 2025 Noticias Colombia - Deportes. Todos los derechos reservados.</p>
+                    <!-- Texto de copyright -->
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- Fin del contenido visible de la página -->
+
+</html>
+<!-- Fin del documento HTML -->

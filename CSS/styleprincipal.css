@@ -1,0 +1,248 @@
+/* Variables de colores y constantes reutilizables */
+:root {
+    --primary-color: #FCD116;       /* color principal (amarillo) */
+    --secondary-color: #003893;     /* color secundario (azul oscuro) */
+    --accent-color: #CE1126;        /* color de acento (rojo) */
+    --light-color: #f8f9fa;         /* color claro para fondos secundarios */
+    --dark-color: #343a40;          /* color oscuro para footer y texto invertido */
+    --text-color: #333;             /* color base del texto */
+    --border-radius: 8px;           /* radio de bordes estándar */
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra estándar para tarjetas */
+}
+
+/* Reinicio básico y caja de modelo */
+* {
+    margin: 0;                      /* quitar margen por defecto */
+    padding: 0;                     /* quitar padding por defecto */
+    box-sizing: border-box;         /* incluir padding y border en el ancho/alto */
+}
+
+/* Estilos base del cuerpo */
+body {
+    font-family: 'Open Sans', sans-serif; /* fuente principal */
+    color: var(--text-color);             /* color de texto principal */
+    background-color: #f5f5f5;            /* fondo general de la página */
+    line-height: 1.6;                     /* interlineado legible */
+}
+
+/* Encabezados con tipografía destacada */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* fuente para títulos */
+    margin-bottom: 1rem;                   /* separación inferior estándar */
+    color: var(--secondary-color);         /* color de los títulos */
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;                 /* quitar subrayado por defecto */
+    color: var(--secondary-color);         /* color del enlace */
+    transition: color 0.3s;                /* suavizar cambio de color */
+}
+a:hover {
+    color: var(--accent-color);            /* color al pasar el cursor */
+}
+
+/* Imágenes responsivas */
+img {
+    max-width: 100%;   /* no salirse del contenedor */
+    height: auto;      /* escalar proporcionalmente */
+    display: block;    /* evita gaps debajo de la imagen */
+}
+
+/* Contenedor central */
+.container {
+    width: 90%;             /* ancho relativo para responsividad */
+    max-width: 1200px;      /* ancho máximo fijo */
+    margin: 0 auto;         /* centrar horizontalmente */
+    padding: 0 15px;        /* pequeño padding lateral */
+}
+
+/* Header principal */
+header {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%); /* degradado */
+    color: white;           /* texto en blanco */
+    padding: 1.5rem 0;      /* espacio vertical */
+    text-align: center;     /* centrar contenido */
+    width: 100%;            /* abarcar todo el ancho */
+    box-shadow: var(--box-shadow); /* sombra */
+}
+header h1 {
+    color: white;           /* asegurar color blanco */
+    font-size: 2.5rem;      /* tamaño grande para el título */
+    margin-bottom: 0.5rem;  /* separación con el subtítulo */
+}
+
+/* Navegación principal */
+nav {
+    background-color: var(--light-color);  /* fondo claro */
+    padding: 1rem 0;                       /* espacio vertical */
+    width: 100%;                           /* ocupar ancho completo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* sombra sutil */
+}
+nav ul {
+    display: flex;                   /* menú horizontal por defecto */
+    justify-content: center;         /* centrar items */
+    list-style: none;                /* quitar viñetas */
+}
+nav ul li {
+    margin: 0 1.5rem;                /* separación horizontal entre items */
+}
+nav ul li a {
+    font-weight: 600;                /* texto ligeramente más grueso */
+    font-size: 1.1rem;               /* tamaño de texto del menú */
+    padding: 0.5rem 1rem;            /* área clicable más grande */
+    border-radius: var(--border-radius); /* esquinas redondeadas */
+    transition: background-color 0.3s; /* transición al hover */
+}
+nav ul li a:hover {
+    background-color: rgba(0, 56, 147, 0.1); /* fondo suave al pasar cursor */
+}
+
+/* Contenido principal */
+main {
+    padding: 2rem 0;                 /* espacio superior e inferior */
+}
+
+/* Sección introductoria */
+.intro {
+    background-color: white;         /* fondo blanco para destacar */
+    padding: 2rem;                   /* espacio interior amplio */
+    border-radius: var(--border-radius); /* esquinas redondeadas */
+    margin-bottom: 2rem;             /* separación con las siguientes secciones */
+    box-shadow: var(--box-shadow);   /* sombra para elevar visualmente */
+    text-align: center;              /* centrar texto */
+}
+.intro p {
+    font-size: 1.1rem;               /* texto un poco más grande */
+    max-width: 800px;                /* limitar ancho de lectura */
+    margin: 0 auto;                  /* centrar el párrafo */
+}
+
+/* Tabla de noticias */
+.news-table {
+    width: 100%;                     /* tabla ocupa todo el ancho del contenedor */
+    margin: 2rem 0;                  /* separación vertical */
+    border-collapse: collapse;       /* eliminar espacios entre celdas */
+    background-color: white;         /* fondo blanco */
+    box-shadow: var(--box-shadow);   /* sombra alrededor de la tabla */
+    border-radius: var(--border-radius); /* bordes redondeados */
+    overflow: hidden;                /* recortar bordes redondeados */
+}
+.news-table th, .news-table td {
+    padding: 1rem;                   /* espacio dentro de celdas */
+    text-align: left;                /* alinear texto a la izquierda */
+    border-bottom: 1px solid #ddd;   /* separación entre filas */
+}
+.news-table th {
+    background-color: var(--secondary-color); /* fondo de cabecera (azul) */
+    color: white;                    /* texto blanco en cabecera */
+    font-weight: 600;                /* cabecera destacada */
+}
+.news-table tr:last-child td {
+    border-bottom: none;             /* quitar la línea inferior de la última fila */
+}
+.news-table tr:hover {
+    background-color: rgba(0, 56, 147, 0.05); /* sutil cambio al pasar el cursor */
+}
+
+/* Grid de tarjetas de noticias */
+.news-cards {
+    display: grid;                                   /* usar grid para layout responsivo */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* columnas fluidas */
+    gap: 2rem;                                       /* espacio entre tarjetas */
+    margin: 2rem 0;                                  /* separación vertical */
+}
+
+/* Tarjeta individual */
+.card {
+    background-color: white;         /* fondo blanco */
+    border-radius: var(--border-radius); /* esquinas redondeadas */
+    overflow: hidden;                /* recortar contenido que sobresalga */
+    box-shadow: var(--box-shadow);   /* sombra para elevar tarjeta */
+    transition: transform 0.3s, box-shadow 0.3s; /* animación al hover */
+}
+.card:hover {
+    transform: translateY(-5px);     /* levantar tarjeta al pasar el cursor */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* sombra más pronunciada */
+}
+
+/* Contenedor de imagen dentro de la tarjeta */
+.card-img {
+    height: 200px;                   /* altura fija para consistencia */
+    overflow: hidden;                /* recortar imagen si excede */
+}
+.card-img img {
+    width: 100%;                     /* imagen ocupa el ancho */
+    height: 100%;                    /* y la altura del contenedor */
+    object-fit: cover;               /* recortar inteligentemente manteniendo proporción */
+    transition: transform 0.5s;      /* suavizar zoom al hover */
+}
+.card:hover .card-img img {
+    transform: scale(1.05);          /* zoom suave en hover */
+}
+
+/* Contenido textual de la tarjeta */
+.card-content {
+    padding: 1.5rem;                 /* espacio interior */
+}
+.card h3 {
+    margin-bottom: 0.5rem;           /* separación con el párrafo */
+    font-size: 1.3rem;               /* tamaño del título de la tarjeta */
+}
+.card p {
+    margin-bottom: 1rem;             /* separación antes de la fecha */
+    color: #666;                     /* color gris para el resumen */
+}
+.card .date {
+    font-size: 0.9rem;               /* texto más pequeño para la fecha */
+    color: #777;                     /* gris intermedio */
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color); /* fondo oscuro */
+    color: white;                    /* texto en blanco */
+    padding: 2rem 0;                 /* espacio vertical */
+    width: 100%;                     /* ocupar todo el ancho */
+    margin-top: 2rem;                /* separación con el main */
+}
+.footer-content {
+    display: flex;                   /* disposición horizontal por defecto */
+    justify-content: space-between;  /* separar elementos a los extremos */
+    align-items: center;             /* centrar verticalmente */
+    flex-wrap: wrap;                 /* permitir que baje en pantallas pequeñas */
+}
+copyright {
+    margin-bottom: 1rem;             /* espacio inferior (si aplica) */
+}
+
+/* Enlaces sociales en el footer */
+.social-links {
+    display: flex;                   /* íconos en fila */
+    gap: 1rem;                       /* separación entre íconos */
+}
+.social-links a {
+    color: white;                    /* íconos en blanco */
+    font-size: 1.5rem;               /* tamaño visible */
+}
+.social-links a:hover {
+    color: var(--primary-color);     /* cambiar al color principal al hover */
+}
+
+/* Responsive: adaptaciones para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;      /* menú en columna en móviles */
+        align-items: center;         /* centrar items */
+    }
+    nav ul li {
+        margin: 0.5rem 0;            /* menos espacio entre items */
+    }
+    .footer-content {
+        flex-direction: column;      /* footer en columna para móviles */
+        text-align: center;          /* centrar texto en footer */
+    }
+    .news-cards {
+        grid-template-columns: 1fr;  /* tarjetas apiladas en una columna */
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html> <!-- Declara que el documento usa HTML5 -->
+<html lang="es"> <!-- Raíz del documento; el contenido está en español -->
+
+<head> <!-- Cabecera: metadatos y recursos externos -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escalado correcto en móviles -->
+    <title>Noticias Colombia</title> <!-- Título que verá el navegador/pestaña -->
+    <link rel="stylesheet" href="/CSS/styleprincipal.css" /> <!-- Hoja de estilos externa -->
+</head>
+
+<body> <!-- Cuerpo visible de la página -->
+    <header> <!-- Encabezado del sitio -->
+        <div class="container"> <!-- Contenedor para limitar ancho y centrar -->
+            <h1>Noticias Colombia</h1> <!-- Título principal del sitio -->
+            <p>Tu fuente confiable de información actualizada</p> <!-- Subtítulo/claim -->
+        </div>
+    </header>
+
+    <nav> <!-- Barra de navegación principal -->
+        <div class="container"> <!-- Contenedor de la navegación -->
+            <ul> <!-- Lista de enlaces del menú -->
+                <li><a href="#">Inicio</a></li> <!-- Enlace a la portada (placeholder) -->
+                <li><a href="#">Noticias</a></li> <!-- Enlace a sección noticias (placeholder) -->
+                <li><a href="politica.html" target="_blank">Política</a></li> <!-- Abre Política en nueva pestaña -->
+                <li><a href="deportes.html" target="_blank">Deportes</a></li> <!-- Abre Deportes en nueva pestaña -->
+                <li><a href="contacto.html" target="_blank">Contacto</a></li> <!-- Abre Contacto en nueva pestaña -->
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container"> <!-- Contenido principal; se aplica la clase de ancho -->
+        <section class="intro"> <!-- Sección introductoria -->
+            <h2>Últimas noticias de Colombia</h2> <!-- Título de la sección -->
+            <p>Mantente informado con las noticias más relevantes de Colombia y el mundo. Nuestro equipo de periodistas
+                trabaja las 24 horas para brindarte información veraz y oportuna sobre política, economía, deportes,
+                cultura y más.</p> <!-- Texto de bienvenida -->
+        </section>
+
+        <section> <!-- Sección del resumen en tabla -->
+            <h2>Resumen de Noticias</h2> <!-- Título de la sección -->
+            <table class="news-table"> <!-- Tabla con clase para estilos -->
+                <thead> <!-- Cabecera de la tabla -->
+                    <tr> <!-- Fila de cabecera -->
+                        <th>Título de la noticia</th> <!-- Columna: título -->
+                        <th>Fecha</th> <!-- Columna: fecha -->
+                        <th>Fuente</th> <!-- Columna: medio -->
+                    </tr>
+                </thead>
+                <tbody> <!-- Cuerpo de la tabla con filas de datos -->
+                    <tr> <!-- Fila 1 -->
+                        <td><a href="#">Gobierno anuncia nuevo plan de reactivación económica</a></td>
+                        <!-- Título con enlace -->
+                        <td>05/09/2025</td> <!-- Fecha -->
+                        <td>El Tiempo</td> <!-- Fuente -->
+                    </tr>
+                    <tr> <!-- Fila 2 -->
+                        <td><a href="#">Selección Colombia clasifica a la Copa Mundial de Fútbol 2026</a></td>
+                        <td>04/09/2025</td>
+                        <td>AS Colombia</td>
+                    </tr>
+                    <tr> <!-- Fila 3 -->
+                        <td><a href="#">Descubren nueva especie de orquídea en la Sierra Nevada</a></td>
+                        <td>03/09/2025</td>
+                        <td>National Geographic</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section> <!-- Sección de tarjetas destacadas -->
+            <h2>Noticias Destacadas</h2> <!-- Título de la sección -->
+            <div class="news-cards"> <!-- Grid o contenedor de tarjetas -->
+                <div class="card"> <!-- Tarjeta 1 -->
+                    <div class="card-img"> <!-- Contenedor de imagen -->
+                        <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Política colombiana"> <!-- Imagen con texto alternativo -->
+                    </div>
+                    <div class="card-content"> <!-- Texto de la tarjeta -->
+                        <h3>Reforma tributaria es aprobada en último debate</h3> <!-- Título de la noticia -->
+                        <p>El Congreso de la República aprobó en su último debate la reforma tributaria que busca
+                            recaudar 25 billones de pesos para financiar programas sociales.</p> <!-- Resumen -->
+                        <span class="date">Publicado: 05/09/2025</span> <!-- Fecha con estilo específico -->
+                    </div>
+                </div>
+
+                <div class="card"> <!-- Tarjeta 2 -->
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1516466723877-e4ec1d736c8a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Café colombiano">
+                    </div>
+                    <div class="card-content">
+                        <h3>Exportaciones de café alcanzan récord histórico</h3>
+                        <p>Las exportaciones de café colombiano crecieron un 18% en el último trimestre, alcanzando un
+                            valor de 1.200 millones de dólares.</p>
+                        <span class="date">Publicado: 04/09/2025</span>
+                    </div>
+                </div>
+
+                <div class="card"> <!-- Tarjeta 3 -->
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1592564630984-741a6dd90b36?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Festival de cine">
+                    </div>
+                    <div class="card-content">
+                        <h3>Festival de Cine de Cartagena anuncia programación 2025</h3>
+                        <p>El prestigioso festival cinematográfico presentará 120 películas de 45 países, con especial
+                            énfasis en producciones latinoamericanas.</p>
+                        <span class="date">Publicado: 03/09/2025</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer> <!-- Pie de página -->
+        <div class="container"> <!-- Contenedor para ancho/centrado -->
+            <div class="footer-content"> <!-- Zona agrupada del footer -->
+                <div class="copyright"> <!-- Bloque de derechos -->
+                    <p>&copy; 2025 Noticias Colombia. Todos los derechos reservados.</p> <!-- Aviso de copyright -->
+                </div>
+            </div>
+        </div>
+    </footer>
+</body> <!-- Cierre del cuerpo -->
+
+</html> <!-- Cierre del documento HTML -->
